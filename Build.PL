@@ -9,14 +9,8 @@ Module::Build->new(
     requires => {
         'CGI::Application' => 0,
     },
-    recommends => {
-        'CGI' => 0,
-    },
     build_requires    => {
       'Test::More'  => 0,
-      'CGI'         => 0,
-      'Test::MockObject' => 0,
-      'Test::MockObject::Extends' => 0,
     },
     create_makefile_pl => 'traditional',
     dist_author => 'Jiří Pavlovský  <jira@getnet.cz>',

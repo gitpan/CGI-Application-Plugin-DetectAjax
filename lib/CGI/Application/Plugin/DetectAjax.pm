@@ -10,7 +10,7 @@ require Exporter;
 
 @CGI::Application::Plugin::DetectAjax::ISA = qw(Exporter);
 
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 @EXPORT = qw(
   is_ajax

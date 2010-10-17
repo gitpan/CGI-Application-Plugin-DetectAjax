@@ -9,10 +9,7 @@ WriteMakefile
           'VERSION_FROM' => 'lib/CGI/Application/Plugin/DetectAjax.pm',
           'PREREQ_PM' => {
                            'Test::More' => 0,
-                           'Test::MockObject' => 0,
-                           'CGI::Application' => 0,
-                           'Test::MockObject::Extends' => 0,
-                           'CGI' => 0
+                           'CGI::Application' => 0
                          }
         )
 ;

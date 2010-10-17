@@ -3,9 +3,6 @@ abstract: 'Plugin that adds XMLHttpRequest detection to CGI::Application'
 author:
   - 'Jiří Pavlovský  <jira@getnet.cz>'
 build_requires:
-  CGI: 0
-  Test::MockObject: 0
-  Test::MockObject::Extends: 0
   Test::More: 0
 configure_requires:
   Module::Build: 0.36
@@ -18,11 +15,9 @@ name: CGI-Application-Plugin-DetectAjax
 provides:
   CGI::Application::Plugin::DetectAjax:
     file: lib/CGI/Application/Plugin/DetectAjax.pm
-    version: 0.02
-recommends:
-  CGI: 0
+    version: 0.03
 requires:
   CGI::Application: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.02
+version: 0.03
