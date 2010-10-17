@@ -10,7 +10,7 @@ require Exporter;
 
 @CGI::Application::Plugin::DetectAjax::ISA = qw(Exporter);
 
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 @EXPORT = qw(
   is_ajax
@@ -80,7 +80,7 @@ modules which detects whether the current request was made by XMLHttpRequest.
 
 =head2 is_ajax
 
-This method will return the true if the current request was made by XMLHttpRequest.
+This method will return true if the current request was made by XMLHttpRequest and false otherwise.
 It works by checking for 'X-Requested-With' header and its value.
 
 
