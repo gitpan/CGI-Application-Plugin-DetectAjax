@@ -18,11 +18,11 @@ name: CGI-Application-Plugin-DetectAjax
 provides:
   CGI::Application::Plugin::DetectAjax:
     file: lib/CGI/Application/Plugin/DetectAjax.pm
-    version: 0.01
+    version: 0.02
 recommends:
   CGI: 0
 requires:
   CGI::Application: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01
+version: 0.02

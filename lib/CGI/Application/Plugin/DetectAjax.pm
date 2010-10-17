@@ -10,7 +10,7 @@ require Exporter;
 
 @CGI::Application::Plugin::DetectAjax::ISA = qw(Exporter);
 
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 @EXPORT = qw(
   is_ajax
@@ -20,9 +20,10 @@ sub is_ajax {
 
   my $self = shift;
 
-  my $header = $self->query->http('X-Requested-With');
 
-  if (defined $header && lc $header eq 'xmlhttprequest') {
+  my $header = 'HTTP_X_REQUESTED_WITH';
+
+  if (exists $ENV{$header} && lc $ENV{$header} eq 'xmlhttprequest') {
     return 1;
   }
   else {
@@ -35,6 +36,7 @@ sub is_ajax {
 1;
 
 __END__
+=encoding utf8
 
 =head1 NAME
 

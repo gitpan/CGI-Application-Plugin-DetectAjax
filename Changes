@@ -1,0 +1,1 @@
+0.02 Don't depend on CGI::* modules. We check for the header ourselfs.

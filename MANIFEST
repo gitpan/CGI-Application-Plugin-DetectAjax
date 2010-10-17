@@ -1,4 +1,5 @@
 Build.PL
+Changes
 lib/CGI/Application/Plugin/DetectAjax.pm
 Makefile.PL
 MANIFEST
