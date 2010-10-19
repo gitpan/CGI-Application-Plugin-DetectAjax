@@ -3,14 +3,11 @@ package CGI::Application::Plugin::DetectAjax;
 use strict;
 use vars qw($VERSION @EXPORT);
 
-use CGI::Application ();
-require UNIVERSAL::require;
-
 require Exporter;
 
 @CGI::Application::Plugin::DetectAjax::ISA = qw(Exporter);
 
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 @EXPORT = qw(
   is_ajax
